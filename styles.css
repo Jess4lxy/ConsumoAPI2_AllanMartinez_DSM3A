@@ -1,0 +1,228 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    min-height: 100vh; /* Asegura que el body ocupe al menos toda la altura de la ventana */
+    margin: 0;
+    background-image: url('images/pokedexBackground.webp');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+}
+
+
+.pokedex {
+    background-color: #ff0000;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+    position: relative;
+    border: 5px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.screen {
+    background-color: #d3d3d3;
+    border: 5px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    max-height: 60vh;
+    overflow: auto;
+    flex-grow: 1;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    color: #000;
+    margin: 0;
+}
+
+#search {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+}
+
+.pokemon-info {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    position: relative;
+    min-height: 100px;
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+.pokemon-info img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+.pokemon-info .info-section {
+    padding: 10px 0;
+}
+
+.pokemon-info .info-section p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.pokemon-info .info-section .type {
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 5px;
+    margin-right: 5px;
+    color: #fff;
+}
+
+.pokemon-info .info-section .type.normal {
+    background-color: #a8a878;
+}
+
+.pokemon-info .info-section .type.grass {
+    background-color: #78c850;
+}
+
+.pokemon-info .info-section .type.fire {
+    background-color: #f08030;
+}
+
+.pokemon-info .info-section .type.water {
+    background-color: #6890f0;
+}
+
+.pokemon-info .info-section .type.electric {
+    background-color: #f8d030;
+}
+
+.pokemon-info .info-section .type.ice {
+    background-color: #98d8d8;
+}
+
+.pokemon-info .info-section .type.fighting {
+    background-color: #c03028;
+}
+
+.pokemon-info .info-section .type.poison {
+    background-color: #a040a0;
+}
+
+.pokemon-info .info-section .type.ground {
+    background-color: #e0c068;
+}
+
+.pokemon-info .info-section .type.flying {
+    background-color: #a890f0;
+}
+
+.pokemon-info .info-section .type.psychic {
+    background-color: #f85888;
+}
+
+.pokemon-info .info-section .type.bug {
+    background-color: #a8b820;
+}
+
+.pokemon-info .info-section .type.rock {
+    background-color: #b8a038;
+}
+
+.pokemon-info .info-section .type.ghost {
+    background-color: #705898;
+}
+
+.pokemon-info .info-section .type.dragon {
+    background-color: #7038f8;
+}
+
+.pokemon-info .info-section .type.dark {
+    background-color: #705848;
+}
+
+.pokemon-info .info-section .type.steel {
+    background-color: #b8b8d0;
+}
+
+.pokemon-info .info-section .type.fairy {
+    background-color: #ee99ac;
+}
+
+.pokemon-info .description {
+    margin-top: 10px;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    font-style: italic;
+}
+
+.pokemon-info .title-bar {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.pokemon-info .stats {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.pokemon-info .stats p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    max-width: 100%;
+}
+
+.button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 3px solid #000;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.button.blue {
+    background-color: #3b4cca;
+}
+
+.button.red {
+    background-color: #ff0000;
+}
+
+.button.yellow {
+    background-color: #ffde00;
+}
+
+.button.green {
+    background-color: #00c853;
+}
